@@ -1,0 +1,18 @@
+local args = {
+    [1] = {
+        ["AutoSellPassives"] = {},
+        ["OwnFX"] = false,
+        ["AutoClicker"] = true,
+        ["AutoSprint"] = true,
+        ["InstantPassive"] = true,
+        ["OtherFX"] = false,
+        ["MusicEnabled"] = true,
+        ["TradesEnabled"] = true,
+        ["BoostPaused"] = true,
+        ["AutoAttack"] = true,
+        ["MagnetPass"] = true,
+        ["SoundsEnabled"] = true
+    }
+}
+
+game:GetService("ReplicatedStorage").Remote.SetSettings:FireServer(unpack(args))
